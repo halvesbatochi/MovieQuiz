@@ -20,6 +20,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <view alpha="0.5" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PrL-y6-SWh">
+                                <rect key="frame" x="0.0" y="0.0" width="420" height="902"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUA-Tt-AKw">
                                 <rect key="frame" x="0.0" y="820" width="414" height="42"/>
                                 <subviews>
@@ -126,6 +131,9 @@
                                         <rect key="frame" x="0.0" y="146.5" width="414" height="295"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="playQuiz" destination="BYZ-38-t0r" eventType="touchUpInside" id="vLb-ul-5vc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -170,6 +178,7 @@
                         <outlet property="ivQuiz" destination="Dar-x8-kDF" id="jol-OK-JYt"/>
                         <outlet property="slMusic" destination="3Gg-h9-WVz" id="O7u-Qj-PT6"/>
                         <outlet property="viSoundBar" destination="wUA-Tt-AKw" id="QLl-gJ-bne"/>
+                        <outlet property="viTimer" destination="PrL-y6-SWh" id="bDS-LG-Ehn"/>
                         <outletCollection property="btOptions" destination="nVx-IU-R3G" collectionClass="NSMutableArray" id="Gh9-qB-Mc5"/>
                         <outletCollection property="btOptions" destination="FGa-X1-EZE" collectionClass="NSMutableArray" id="Iws-M9-sOW"/>
                         <outletCollection property="btOptions" destination="iUi-0M-PFt" collectionClass="NSMutableArray" id="hrG-SC-CGj"/>
