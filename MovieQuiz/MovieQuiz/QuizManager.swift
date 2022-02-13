@@ -29,7 +29,7 @@ class QuizManager {
             let quizOptionsURL = Bundle.main.url(forResource: "options", withExtension: "json")!
             // Criação da DATA a partir da URL
             let quizOptionsData = try! Data(contentsOf: quizOptionsURL)
-            // Decoficando o Data em um array de Quiz
+            // Decoficando o Data em um array de QuizOptions
             quizOptions = try! JSONDecoder().decode([QuizOption].self, from: quizOptionsData)
         } catch {
             // Caso ocorra algum erro
