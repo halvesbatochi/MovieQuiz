@@ -25,7 +25,7 @@
 ## Recuperação de dados JSON
 > A seguir um exemplo para recuperação de dados extraído de um arquivo JSON:
     
-```
+~~~
 class QuizManager {
 
     let quizes      : [Quiz]
@@ -56,7 +56,7 @@ class QuizManager {
         }
     }
 }
-```
+~~~
     
 ## Snapshots
 
